@@ -50,23 +50,66 @@ Pictures : No. of pictures posted with review
 
 Performed Text preprocessing techniques like Stemming, Lemmatization, TfidfVectorizer.
 
+Stemming
+
+It is a technique used to extractbthe base form of the words by removing affixes from them. It is just like cutting down the branches of a tree to its stems.
+
+Lemmatization
+
+Lemmatization is a method responsible for grouping different inflected forms of words into the root form, having the same meaning.
+
+TfidfVectorizer
+
+Term frequency-inverse document frequency is a text vectorizer that transforms the text into a usable vector. It combines 2 concepts, Term Frequency (TF) and Document Frequency (DF). The term frequency is the number of occurrences of a specific term in a document.
+
+
 # Clustering
+
+It is the task of dividing the population or data points into a number of groups such that data points in the same groups are more similar to other data points in the same group than those in other groups.
 
 Implemented K-means Clustering, Agglomerative Clustering and obtained optimal number of cluster using Elbow method.
 
+K-means
+
+The K-means clustering algorithm computes centroids and repeats until the optimal centroid is found. It is presumptively  known how many clusters there are. It is also known as the flat clustering algorithm. The number of clusters found from data by the method is denoted by the letter ‘K’ in K-means.
+
 ![image](https://user-images.githubusercontent.com/102578847/202617214-3a3c2076-745d-47fd-a4cf-7bb4a733fc17.png)
+
+DBSCAN Clustering
+
+DBSCAN is a density-based clustering algorithm that works on the assumption that clusters are dense regions in space separated by regions of lower density. It groups ‘densely grouped’ data points into a single cluster. It can identify clusters in large spatial datasets by looking at the local density of the data points. The most exciting feature of DBSCAN clustering is that it is robust to outliers. 
 
 # Performed Vader and Textblob Sentiment analysis.
 
 Vader
 
+Sentiment analysis is a text analysis method that detects polarity (e.g. a positive or negative opinion) within the text, whether a whole document, paragraph, sentence, or clause. Sentiment analysis aims to measure the attitude, sentiments, evaluations, attitudes, and emotions of a speaker/writer based on the computational treatment of subjectivity in a text.
+
 ![image](https://user-images.githubusercontent.com/102578847/202617399-65dd0670-b015-4f93-85d9-7efa4f6da88d.png)
 
 Textblob
+
+TextBlob is a python library for Natural Language Processing (NLP).TextBlob actively used Natural Language ToolKit (NLTK) to achieve its tasks. NLTK is a library which gives an easy access to a lot of lexical resources and allows users to work with categorization, classification and many other tasks. TextBlob is a simple library which supports complex analysis and operations on textual data.
 
 ![image](https://user-images.githubusercontent.com/102578847/202617509-a61791ee-e4e8-478e-a154-12f1a345cb7b.png)
 
 # Conclusion
 
-Achieved Silhouette score of 0.204 and was able to generate insights on cost vs benefit and Sentiment analysis.
+* Achieved Silhouette score of 0.204 and was able to generate insights on cost vs benefit and Sentiment analysis.
+* North Indian cuisine is most common cuisine found in the restaurants.
+* Collage - Hyatt Hyderabad Gachibowli is most expensive restaurant.
+* Amul and Mohammedia Shawarma are the most affordable restaurants.
+* The Restaurants are clustered on cuisines into 15 clusters by using KMeans clustering algorithm with the Silhouette score of 0.195.
+* DBSCAN algorithm is also used to cluster the restaurants into 15 clusters and also helps us to detect the outliers with the Silhouette score of 0.107.
+* Anvesh Chowdary has given the most number of reviews.
+* AB’s – Absolute Barbecues is the top rated restaurant.
+* Almost 79 percent of the observations have Positive sentiment and 14 and 7 percent of the observations have Neutral and Negative sentiments respectively
+* Good is the most common word in the Highly positive sentiment.
+* Worst is the most common word in the Highly negative sentiment.
+* AB’s – Absolute Barbecues, The Indi grill and B-Dubs are the restaurants with the most number of positive reviews.
+* Arena Eleven and Banana leaf Multicuisine restaurant are the restaurants with the most number of negative reviews.
+* Udipi's Upahar is the most affordable restaurant with the best rating.
+* Feast - Sheraton Hyderabad Hotel is the most expensive restaurant with the best rating.
+* Asian Meal Box is the most affordable restaurant with the worst rating.
+* Club Rogue is the expensive restaurant with worst rating.
 
